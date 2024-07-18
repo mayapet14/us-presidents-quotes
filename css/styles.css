@@ -1,0 +1,122 @@
+/*add font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+/*general css begins*/
+body {
+            background-color: #181e59;
+            font-family:  Poppins, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+div {
+    display: flex;
+    flex-flow: wrap;
+    width: 80em;
+    gap: 1em;
+    margin: 8em auto;
+    padding: 1em;
+    border: #03072c solid .5em;
+    background-color: #f7f6e2;
+    }    
+
+/*header*/
+
+header{
+    flex: 1 1 100%;
+    background-size: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #be6b6b;
+    box-shadow: #161c63 .01em .25em .25em;
+    z-index: 2;
+}
+h1 {
+    font-size: 3em;
+    color:#f7f6e2;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+/*images*/
+
+img {
+    width: 100%;
+    display: block;
+}
+figure {
+    flex: 1 1 7.5em;
+    position: relative;
+}
+blockquote{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    top: 0em;
+    opacity: .8;
+    height: 11.7em;
+    font-size: .75em;
+    padding: 0em .5em;
+    align-items: center;
+}
+figcaption {
+    position: absolute;
+    width: 78%;
+    left: 11%;
+    text-align: center;
+    color: beige;
+    bottom: -.5em;
+    background-color: #020d68;
+    border-radius: .25em;
+    padding: .25em 0em;
+    outline: red solid;
+}
+
+/*remove first name*/
+
+span:nth-of-type(odd){
+    display:none;
+}
+
+/*hover triggers*/
+
+figure:hover blockquote { /*extra credit #2*/
+    display: flex;
+    justify-content: center;
+}
+figure:hover > figcaption {
+    font-weight: 800;
+    width: 80%;
+    left: 10%;
+    outline: red solid .2em;
+}
+figure[data-party="rep"]:hover { /*extra credit #1*/
+    outline: red solid .2em;
+}
+figure[data-party="dem"]:hover {
+    outline: blue solid .2em;
+}
+figure[data-party="fed"]:hover{
+    outline: green solid .2em;
+}
+figure[data-party="demrep"]:hover{
+    outline: green solid .2em;
+}
+figure[data-party="whig"]:hover{
+    outline: green solid .2em;
+}
+figure[data-party="nu"]:hover {
+    outline: green solid .2em;
+}
+
+/*breaks*/
+@media screen and (width < 60em){
+    div{
+        width: 45em;
+    }
+}
+@media screen and (width < 40em){
+    div{
+        width:30em;
+    }
+}
