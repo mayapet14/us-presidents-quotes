@@ -9,7 +9,6 @@ body {
 div {
     display: flex;
     flex-flow: wrap;
-    width: 80em;
     gap: 1em;
     margin: 8em auto;
     padding: 1em;
@@ -113,5 +112,10 @@ figure[data-party="nu"]:hover {
 @media screen and (width < 60em){
     div{
         width: 45em;
+    }
+}
+@media screen and (width < 40em){
+    div{
+        width:30em;
     }
 }
