@@ -1,6 +1,9 @@
 /*add font*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 /*general css begins*/
+* {
+  box-sizing: border-box;
+}
 body {
             background-color: #181e59;
             font-family:  Poppins, Georgia, Times, 'Times New Roman', serif;
