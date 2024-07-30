@@ -115,8 +115,3 @@ figure[data-party="nu"]:hover {
         width: 45em;
     }
 }
-@media screen and (width < 40em){
-    div{
-        width:30em;
-    }
-}
